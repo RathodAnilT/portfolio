@@ -1,0 +1,38 @@
+/* styles.css */
+
+/* General styles for the skills section */
+#skills {
+    background-color: #1E3A8A; /* Blue color to match the homepage */
+    color: #ffffff;
+}
+
+#skills h2, #skills h3 {
+    color: #ffffff;
+}
+
+#skills img {
+    transition: transform 0.3s ease;
+}
+
+#skills img:hover {
+    transform: scale(1.1);
+}
+
+.bg-gray-800:hover {
+    background-color: #4B5563; /* Darker gray on hover */
+}
+
+/* Animation styles */
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animated.animate-fadeIn {
+    opacity: 1;
+}
+
+.animated.animate-slideUp {
+    transform: translateY(0);
+}

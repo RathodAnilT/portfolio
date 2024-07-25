@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil's - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Custom styles for the coding profile icons */
+        .coding-profiles {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 2rem; /* Adjust the margin from the left side here */
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            gap: 1rem; /* Adjust the gap between icons */
+        }
+        .coding-profiles a {
+            display: block;
+            width: 2rem; /* Adjust size */
+            height: 2rem; /* Adjust size */
+        }
+        .coding-profiles img {
+            width: 100%;
+            height: 100%;
+            filter: contrast(1.5); /* Increase contrast */
+        }
+        .coding-profiles a:hover img {
+            opacity: 0.8; /* Change opacity on hover */
+            filter: contrast(1.8); /* Increase contrast further on hover */
+        }
+    </style>
+    
+
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold">Anil Rathod</a>
+            <div>
+                <a href="#projects" class="px-4 py-2 hover:text-blue-400 transition">Projects</a>
+                <a href="#skills" class="px-4 py-2 hover:text-blue-400 transition">Skills</a>
+                <a href="#education" class="px-4 py-2 hover:text-blue-400 transition">Education</a>
+                <a href="#experience" class="px-4 py-2 hover:text-blue-400 transition">Experience</a>
+                <a href="#contact" class="px-4 py-2 hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Home Section -->
+<section id="home" class="relative flex items-center justify-center h-screen bg-gray-800 text-white">
+    <!-- Content -->
+    <div class="text-center lg:text-left lg:w-1/2">
+        <h1 id="dynamic-name" class="text-4xl font-bold mb-4">Hi, I'm Anil Rathod</h1>
+        <p id="dynamic-description" class="text-xl mb-4">A passionate Web Developer sksfnskns <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, necessitatibus?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sint?<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iure!</p>
+
+        <div class="flex justify-center lg:justify-start gap-4">
+            <a href="#contact" class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-gray-200 transition transition-transform transform hover:scale-105 hover:shadow-2xl">Contact Me</a>
+            <a href="path-to-your-resume.pdf" class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-gray-200 transition transition-transform transform hover:scale-105 hover:shadow-2xl">Download Resume</a>
+        </div>
+    </div>
+    
+    <!-- Photo -->
+    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 lg:w-1/4 lg:pr-10">
+        <img src="./profile/Anil2-image.png" alt="Anil Rathod" class="w-48 h-48 rounded-full">
+    </div>
+   <!-- Coding Profiles -->
+<div class="coding-profiles">
+    <a href="https://github.com/RathodAnilT" target="_blank">
+        <img src="./profile/github.png" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/anil-rathod-1a088819b/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-blue-700">
+            <path d="M22.225 0H1.775C.796 0 0 .796 0 1.775v20.45C0 23.204.796 24 1.775 24h20.45c.979 0 1.775-.796 1.775-1.775V1.775C24 .796 23.204 0 22.225 0zM7.045 20.452H3.375V9.045h3.67v11.407zm-1.835-12.763c-1.16 0-2.105-.947-2.105-2.104 0-1.162.946-2.104 2.105-2.104 1.16 0 2.104.942 2.104 2.104 0 1.157-.944 2.104-2.104 2.104zm16.262 12.763h-3.67v-5.946c0-1.416-.027-3.236-1.975-3.236-1.975 0-2.279 1.547-2.279 3.14v6.042h-3.67v-11.407h3.526v1.557h.05c.491-.926 1.692-1.898 3.484-1.898 3.72 0 4.403 2.447 4.403 5.635v6.113z"/>
+        </svg>
+    </a>
+    <a href="https://leetcode.com/u/Anil_Rathod/" target="_blank">
+        <img src="./profile/LeetCode.png" alt="LeetCode">
+    </a>
+    <a href="https://www.codechef.com/users/anilrathod1501" target="_blank">
+        <img src="./profile/codechef1.png" alt="CodeChef">
+    </a>
+    <a href="https://www.geeksforgeeks.org/user/anilrathl9tb/" target="_blank">
+        <img src="./profile/gfg.png" alt="GeeksforGeeks">
+    </a>
+    
+</div>
+
+
+</section>
+
+
+ 
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md w-80 transition-transform transform hover:scale-105 hover:shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">MERN Blog</h3>
+                    <p class="text-gray-300 mb-4">Brief description of the project.</p>
+                    
+                    <img src="./project image/Blog.png" alt="Blog" class="w-full h-auto mb-4">
+                    
+                    <div class="flex justify-between">
+                        <a href="https://link-to-project1.com" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors">View Demo</a>
+                        <a href="https://github.com/yourusername/project1" target="_blank" class="bg-gray-700 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-800 transition-colors">View Code</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md w-80 transition-transform transform hover:scale-105 hover:shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">MERN Blog</h3>
+                    <p class="text-gray-300 mb-4">Brief description of the project.</p>
+                    
+                    <img src="./project image/Blog.png" alt="Blog" class="w-full h-auto mb-4">
+                    
+                    <div class="flex justify-between">
+                        <a href="https://link-to-project1.com" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors">View Demo</a>
+                        <a href="https://github.com/yourusername/project1" target="_blank" class="bg-gray-700 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-800 transition-colors">View Code</a>
+                    </div>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md w-80 transition-transform transform hover:scale-105 hover:shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">MERN Blog</h3>
+                    <p class="text-gray-300 mb-4">Brief description of the project.</p>
+                    
+                    <img src="./project image/Blog.png" alt="Blog" class="w-full h-auto mb-4">
+                    
+                    <div class="flex justify-between">
+                        <a href="https://link-to-project1.com" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors">View Demo</a>
+                        <a href="https://github.com/yourusername/project1" target="_blank" class="bg-gray-700 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-800 transition-colors">View Code</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+        <hr class="my-8 border-t-2 border-gray-400 w-10/12 mx-auto">
+    </section>
+   
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Frontend Skills -->
+                <div class="skill-card bg-gray-900 p-6 rounded-lg shadow-lg w-64 h-auto min-h-64 flex flex-col items-center justify-between transition-transform transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-xl font-bold mb-4">Frontend</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <img src="assets/html.png" alt="HTML5" class="w-12 h-12">
+                        <img src="assets/css.png" alt="CSS3" class="w-12 h-12">
+                        <img src="assets/tailwind.png" alt="Tailwind CSS" class="w-12 h-12">
+                        <img src="assets/javascript.png" alt="JavaScript" class="w-12 h-12">
+                        <img src="assets/react.png" alt="React" class="w-12 h-12">
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-card bg-gray-900 p-6 rounded-lg shadow-lg w-64 h-auto min-h-64 flex flex-col items-center justify-between transition-transform transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-xl font-bold mb-4">Backend</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <img src="assets/firebase.png" alt="Firebase" class="w-12 h-12">
+                        <img src="assets/nodejs.png" alt="Node.js" class="w-12 h-12">
+                        <img src="assets/express.png" alt="Express.js" class="w-12 h-12">
+                        <img src="assets/postman.png" alt="Postman" class="w-12 h-12">
+                        <img src="assets/insomnia.jpeg" alt="Insomnia" class="w-12 h-12">
+                    </div>
+                </div>
+
+                <!-- Databases Skills -->
+                <div class="skill-card bg-gray-900 p-6 rounded-lg shadow-lg w-64 h-auto min-h-64 flex flex-col items-center justify-between transition-transform transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-xl font-bold mb-4">Databases</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <img src="assets/mongodb.png" alt="MongoDB" class="w-12 h-12">
+                        <img src="assets/sql.png" alt="SQL" class="w-12 h-12">
+                    </div>
+                </div>
+
+                <!-- Languages Skills -->
+                <div class="skill-card bg-gray-900 p-6 rounded-lg shadow-lg w-64 h-auto min-h-64 flex flex-col items-center justify-between transition-transform transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-xl font-bold mb-4">Languages</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <img src="assets/Cpp.png" alt="C++" class="w-12 h-12">
+                        <img src="assets/java.png" alt="Java" class="w-12 h-12">
+                        <img src="assets/javascript.png" alt="JavaScript" class="w-12 h-12">
+                        <img src="assets/python.png" alt="Python" class="w-12 h-12">
+                    </div>
+                </div>
+
+                <!-- Tools Skills -->
+                <div class="skill-card bg-gray-900 p-6 rounded-lg shadow-lg w-64 h-auto min-h-64 flex flex-col items-center justify-between transition-transform transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-xl font-bold mb-4">Tools</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <img src="assets/git.png" alt="Git" class="w-12 h-12">
+                        <img src="assets/github.png" alt="GitHub" class="w-12 h-12">
+                        <img src="assets/vscode.png" alt="VS Code" class="w-12 h-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-8 border-t-2 border-gray-400 w-10/12 mx-auto">
+
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Education</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Education Card 1 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md w-80 transition-transform transform hover:scale-105 hover:shadow-lg">
+                    <h3 class="text-xl font-bold mb-2"> BE Computer Engineering</h3>
+                    <p class="text-gray-700 mb-2">Dr. D Y Patil Institute of Engineering, Management and Research, Akurdi</p>
+                    <p>CGPA: 9.64</p>
+                    <p class="text-gray-500">(2021 - 2025)</p>
+                </div>
+                <!-- Education Card 1 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md w-80 transition-transform transform hover:scale-105 hover:shadow-lg">
+                    <h3 class="text-xl font-bold mb-2"> Bacholor of Computer Engineering</h3>
+                    <p class="text-gray-700 mb-2">DYPIEMR</p>
+                    <p class="text-gray-500">2022 - 2025</p>
+                </div>
+                <!-- Add more education cards as needed -->
+            </div>
+        </div>
+        <hr class="my-8 border-t-2 border-gray-400 w-10/12 mx-auto">
+
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Experience</h2>
+            <div class="max-w-2xl mx-auto">
+                <!-- Experience Card 1 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md mb-6 transition-transform transform hover:scale-105 hover:shadow-2xl   ">
+                    <h3 class="text-xl font-bold mb-2">Internship Title 1</h3>
+                    <p class="text-gray-400 mb-2">Company Name</p>
+                    <p class="text-gray-500 mb-2">Month Year - Month Year</p>
+                    <p class="text-gray-300">Description of responsibilities and achievements during this internship.</p>
+                </div>
+                <hr class="my-6 border-gray-700 t-4 w-9/12 mx-auto">
+                <!-- Experience Card 2 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md mb-6 transition-transform transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-xl font-bold mb-2">Internship Title 2</h3>
+                    <p class="text-gray-400 mb-2">Company Name</p>
+                    <p class="text-gray-500 mb-2">Month Year - Month Year</p>
+                    <p class="text-gray-300">Description of responsibilities and achievements during this internship.</p>
+                </div>
+                <hr class="my-6 border-gray-700 t-4 w-9/12 mx-auto">
+                <!-- Add more experience cards as needed -->
+            </div>
+        </div>
+        <hr class="my-8 border-t-2 border-gray-400 w-10/12 mx-auto">
+
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800 text-white ">
+        <div class="container mx-auto px-6 text-center  ">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <p class=" pb-3 mb-3">I'd love to hear from you! Feel free to reach out with any questions or inquiries.</p>
+            <form action="mailto:you@example.com" method="post" enctype="text/plain" class="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto bg-gray-900">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md mb-4 bg-gray-900" required>
+                <input type="text" name="name" placeholder="Phone number" class="w-full p-3 border border-gray-300 rounded-md mb-4 bg-gray-900" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md mb-4 bg-gray-900" required>
+                <textarea name="message" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-md mb-4 bg-gray-900" rows="4" required></textarea>
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-md shadow-lg hover:bg-blue-600 transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-4">
+    <div class="flex justify-center space-x-4 mb-2">
+        <a href="" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-youtube fa-2x"></i>
+        </a>
+        <a href="" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://github.com/RathodAnilT" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </div>
+    <p>&copy; 2024 Anil Rathod. All rights reserved.</p>
+</footer>
+
+
+
+    <!-- Link to External JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
